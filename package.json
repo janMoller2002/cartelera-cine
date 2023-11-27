@@ -26,14 +26,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "rules": {
-      "treatWarningsAsErrors": process.env.CI !== "true" ? "error" : "warn"
-    }
-  },
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    "treatWarningsAsErrors": "warn"
+  }
+},
   "browserslist": {
     "production": [
       ">0.2%",

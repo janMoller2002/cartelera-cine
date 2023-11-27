@@ -34,8 +34,6 @@
       "treatWarningsAsErrors": process.env.CI !== "true"
     }
   },
-    ],
-  },
   "browserslist": {
     "production": [
       ">0.2%",

@@ -33,6 +33,7 @@
     "rules": {
       "treatWarningsAsErrors": process.env.CI !== "true"
     }
+  },
     ],
   },
   "browserslist": {

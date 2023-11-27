@@ -29,6 +29,10 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "rules": {
+      "treatWarningsAsErrors": process.env.CI !== "true"
+    }
     ]
   },
   "browserslist": {

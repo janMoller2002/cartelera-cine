@@ -31,7 +31,7 @@
       "react-app/jest"
     ],
     "rules": {
-      "treatWarningsAsErrors": process.env.CI !== "true"
+      "treatWarningsAsErrors": process.env.CI !== "true" ? "error" : "warn"
     }
   },
   "browserslist": {

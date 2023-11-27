@@ -30,9 +30,6 @@
     "react-app",
     "react-app/jest"
   ],
-  "rules": {
-    "treatWarningsAsErrors": "warn"
-  }
 },
   "browserslist": {
     "production": [

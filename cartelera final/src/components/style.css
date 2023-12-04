@@ -1,0 +1,66 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* O el color de fondo que prefieras */
+}
+
+.movie-box {
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-box img {
+  width: 100%;
+  border-radius: 0.25rem; /* Añade bordes redondeados a las imágenes */
+}
+
+.movie-box:hover {
+  transform: scale(1.03); /* Efecto de escalado sutil al pasar el ratón */
+}
+
+.movie-info {
+  text-align: center; /* Centra el texto de la información de la película */
+  padding: 0.5rem; /* Espaciado dentro de la información de la película */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .movie-box {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.container {
+  margin-bottom: 50px; /* Ajusta este valor según sea necesario */
+}
+
+
+
+
+
+.custom-seat-margin {
+  margin-top: -45rem; /* Espacio fijo por defecto */
+  margin-left: 50rem; /* Espacio fijo por defecto */
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 1550px) {
+  .custom-seat-margin {
+    margin-top: 1.5rem; /* Menos espacio para pantallas medianas */
+    margin-left: 0.5rem; /* Menos espacio para pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas pequeñas, como móviles */
+@media (max-width: 576px) {
+  .custom-seat-margin {
+    margin-top: 1rem; /* Menos espacio para pantallas pequeñas */
+    margin-left: 0.25rem; /* Menos espacio para pantallas pequeñas */
+  }
+}
+
+.seat-btn {
+  min-width: 55px; /* Ajusta este valor según sea necesario */
+  margin: 0.3rem;
+}

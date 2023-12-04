@@ -1,0 +1,55 @@
+.slick-slide {
+    margin-right: 0px; /* o cualquier valor que proporcione el espaciado adecuado */
+  }
+  
+
+.carousel-image-small {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-container {
+    width: 100%; 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container {
+    padding: 5px; 
+    box-sizing: border-box; /* Asegúrate de que el padding no aumente el tamaño del contenedor */
+  }
+  
+  /* Asegúrate de que las imágenes sean responsivas y mantengan su espacio */
+  .carousel-image-small {
+    width: 100%; /* La imagen llenará su contenedor */
+    display: block; /* Evita que la imagen sea inline */
+  }
+  
+
+  .now-playing-carousel {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+
+  

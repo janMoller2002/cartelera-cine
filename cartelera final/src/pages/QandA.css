@@ -1,0 +1,19 @@
+
+h1 {
+  font-family: 'Verdana', sans-serif; 
+    margin-bottom: 30px;
+  }
+  
+
+/* QandA.css */
+h4 {
+  margin-bottom: 20px;
+  /* padding-left: 20px; */ /* Comentado o eliminado si no lo necesitas */
+}
+
+
+/* QandA.css */
+.accordion-header,
+.accordion-body {
+  text-align: center;
+}

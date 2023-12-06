@@ -73,6 +73,7 @@ const App = () => {
                 src={`https://image.tmdb.org/t/p/w500/${selectedMovie.poster_path}`}
                 alt={selectedMovie.title}
                 className="img-fluid mb-4"
+                style={{ borderRadius: '6px'}}
               />
             </div>
           )}
@@ -81,7 +82,7 @@ const App = () => {
           {selectedMovie && (
             <div>
             {/* Imagen referencial del cine */}
-            <img src={cinemaImage} alt="Cinema Layout" className="img-fluid mb-4" />
+            <img src={cinemaImage} alt="Cinema Layout" className="img-fluid mb-4" style={{ borderRadius: '8px', width:'85%' }}/>
               {/* Aquí iría la lógica para mostrar y seleccionar los asientos */}
               <div className="seat-container">
               {[...Array(6)].map((_, rowIndex) => (

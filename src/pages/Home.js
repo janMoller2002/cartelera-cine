@@ -3,7 +3,7 @@ import axios from 'axios';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Home.css'; // Asegúrate de que el nombre del archivo coincida con tu archivo CSS
+import './Home.css'; 
 
 const Home = () => {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -32,7 +32,7 @@ const Home = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
   };
 
   const settingsTopRated = {
@@ -70,27 +70,28 @@ const Home = () => {
 
   return (
     <div className="container-fluid">
-  <div className="home-carousel">
-    <Slider {...settings}>
-      {popularMovies.map((movie) => (
-        <div key={movie.id} className="carousel-item">
-          <img
-            src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
-            alt={movie.title}
-            className="carousel-image"
-          />
-          {/* Contenedor para el título y el botón */}
-          <div className="carousel-caption">
-            <h3>{movie.title}</h3> {/* Título de la película */}
-            {/* Botón que dirige a la página de compra */}
-            <a href="/compra" className="btn btn-primary">
-              Comprar Boletos
-            </a>
-          </div>
-        </div>
-      ))}
-    </Slider>
-  </div>
+      <div className="home-carousel">
+        <Slider {...settings}>
+          {popularMovies.map((movie) => (
+            <div key={movie.id} className="carousel-item">
+              <img
+                src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+                alt={movie.title}
+                className="carousel-image"
+                style={{ borderRadius: '6px' }}
+              />
+              {/* Contenedor para el título y el botón */}
+              <div className="carousel-caption">
+                <h3>{movie.title}</h3> 
+                {/* Botón que dirige a la página de compra */}
+                <a href="/compra" className="btn btn-primary">
+                  Comprar Boletos
+                </a>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
 
       <div className="now-playing-carousel">
         <h2 style={{ fontFamily: 'Verdana' }}>Top Peliculas De La Historia</h2>
@@ -103,6 +104,9 @@ const Home = () => {
           src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
           alt={movie.title}
           className="carousel-image-small"
+          style={{ borderRadius: '6px' }}
+          onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.008)'}
+          onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
         />
       </div>
     </div>

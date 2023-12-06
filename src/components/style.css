@@ -24,6 +24,7 @@ body {
   padding: 0.5rem; /* Espaciado dentro de la información de la película */
 }
 
+
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .movie-box {

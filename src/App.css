@@ -19,7 +19,7 @@
 .home-carousel {
   position: relative;
   width: 100%;
-  height: 70vh; 
+  height: 80vh; 
   overflow: hidden;
   align-items: center;
   justify-content: center;
@@ -36,22 +36,33 @@
 
 .home-carousel .carousel-caption {
   position: absolute;
-  bottom: 35%; /* Ajusta este valor para posicionar más arriba */
+  bottom: 45%; 
   left: 20%;
   transform: translateX(-50%);
   z-index: 10;
-  color: white; /* O el color que prefieras */
+  color: white; 
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
+  background: rgba(0, 0, 0, 0.5); 
   padding: 1rem;
-  border-radius: 0.5rem;
-  width: 100%; /* Ancho del fondo, ajusta según necesites */
-  max-width: 100%; 
+  width: 100%; 
   font-family: 'Verdana', sans-serif; 
 }
+@media only screen and (max-width: 768px) {
+  .home-carousel .carousel-caption {
+    bottom: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+}
 
-
-
+@media only screen and (max-width: 480px) {
+  .home-carousel .carousel-caption {
+    bottom: 15%; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 
 .movie-name {
@@ -84,6 +95,7 @@
   margin-left: 10%;
   margin-right: 15%;
 }
+
 
 .navbar {
   margin-bottom: 20px;

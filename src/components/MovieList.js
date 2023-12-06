@@ -3,7 +3,7 @@ import './style.css'; // Asegúrate de que el nombre del archivo coincida con tu
 import MovieBox from './MovieBox';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const API_URL="https://api.themoviedb.org/3/movie/popular?api_key=652bb95c3eeddd689fa4a238e3619b1e";
+const API_URL="https://api.themoviedb.org/3/movie/popular?api_key=652bb95c3eeddd689fa4a238e3619b1e&language=es-CL";
 
 function App() {
   const [movies, setMovies] = useState([]);
